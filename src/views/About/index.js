@@ -30,8 +30,8 @@ const About = () => {
     <>
     <Nav/>
       <CustomBanner
-        title="Booking"
-        description="Explore the Restaurants & Dining Options With Serve_Pro"
+        title="About US"
+        description="Home / About US"
         imageUrl={B4}
       />
       <Flex
