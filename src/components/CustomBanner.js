@@ -24,7 +24,7 @@ const CustomBanner = (props) => {
         align={{ base: 'center', md: 'flex-start' }}
         justify="space-between"
       >
-        <Box maxW={{ base: '100%', md: '50%' }} mb={{ base: 8, md: 0 }}>
+        <Box maxW={{ base: '100%', md: '50%' }} mb={{ base: 8, md: 0 }} mt={8}>
           <Text fontSize={{ base: 'md', md: 'lg' }} mb="6" mt={"4"}>
             {props?.firstText ? props?.firstText : ""}
           </Text>

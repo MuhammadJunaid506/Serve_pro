@@ -26,8 +26,8 @@ const Home = () => {
       <Nav/>
       <CustomBanner
         firstText="Rated #1 Smog Check Riverside CA"
-        title="SERVE_PRO"
-        description="Searching for smog check Riverside? SERVE_PRO is the #1 Leader of Smog Checks in Riverside CA. Here at Neighbor Hood we gladly service cars that were manufactured in 1999 or later, and we will gladly service motorhomes, boats, atv, motorcycle, hybrids, and diesel trucks. These are services that surrounding locations prefer not to do and they quickly turn customers away. Not us! We wont turn you away. Sure some of these take more time and significantly more testing, but we’re committed to take care of you. And we try our very best to get you back on the road as quickly as possible.."
+        title="SERVE_PRO – Where Culinary Delights Await!"
+        description="Indulge your senses in a symphony of flavors at Serve_Pro. We take pride in offering a gastronomic experience that transcends the ordinary. From our chef's signature dishes to the warm ambiance, every detail is meticulously curated to elevate your dining experience."
         buttonText1="See Offers"
         buttonText2="Shop Now"
         imageUrl={Banner}

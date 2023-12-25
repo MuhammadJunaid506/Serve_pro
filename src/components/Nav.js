@@ -107,26 +107,18 @@ const PcNav = () => {
       <>
         <ul>
           <a href="/">
-            <li>home</li>
+            <li>Home</li>
           </a>
-
-
-          {/* <a href="/shop">
-            <li>store</li>
+           <a href="/service">
+            <li>Services</li>
           </a>
-
-          <a href="/blogs">
-            <li>blog</li>
-          </a>
-
           <a href="/booking">
-            <li>booking</li>
-          </a> */}
-
-          <a href="/">
+            <li>Booking</li>
+          </a> 
+          <a href="/contact">
             <li>Contact Us</li>
           </a>
-          <a href="/">
+          <a href="/about">
             <li>About Us</li>
           </a>
           {!user ? (
@@ -139,7 +131,9 @@ const PcNav = () => {
                 <li>register</li>
               </a>
             </>
-          ) : null}
+          ) :<a href="/dashboard">
+          <li>DashBoard</li>
+        </a>}
         </ul>
       </>
     );
