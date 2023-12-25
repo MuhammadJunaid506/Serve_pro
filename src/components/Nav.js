@@ -121,7 +121,7 @@ const PcNav = () => {
           <a href="/about">
             <li>About Us</li>
           </a>
-          {!user ? (
+          {/* {!user ? (
             <>
               <a href="/">
                 <li>login</li>
@@ -133,7 +133,7 @@ const PcNav = () => {
             </>
           ) :<a href="/dashboard">
           <li>DashBoard</li>
-        </a>}
+        </a>} */}
         </ul>
       </>
     );
