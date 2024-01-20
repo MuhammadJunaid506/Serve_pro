@@ -49,12 +49,13 @@ const Booking = () => {
     >
     {data.map((item, index)=>(
     <Flex
-    borderWidth="1px"
+    borderWidth={{base:"0px",md:"1px"}}
     borderColor={"gray.400"}
     borderRadius={"10px"}
     alignItems={"center"}
     justifyContent={"space-around"}
     width={"100%"} key={index}
+    direction={{base: "column", md:"row"}}
     >
     <Box ml={3} width={{base:"200px", md:"300px"}} height={{base:"300px", md:"300px"}}>
     <Swiper
@@ -83,7 +84,7 @@ const Booking = () => {
       </SwiperSlide>
     </Swiper>
     </Box>
-    <Flex p={8} gap={"10px"} direction={"column"} maxWidth={"600px"}>
+    <Flex p={8} ml={{base:8, md:0}} gap={"10px"} direction={"column"} maxWidth={"600px"} align={{base:"center", md:"flex-start"}}>
         <Heading fontSize={"24px"}>{item ? item?.name :"Dinner at Eiffel Tower's Madame Brasserie"}</Heading>
         <Text fontSize={"18px"}>{item? item?.address: ""}</Text>
         <Tabs>
