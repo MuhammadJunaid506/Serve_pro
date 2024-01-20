@@ -109,9 +109,9 @@ const PcNav = () => {
           <a href="/">
             <li>Home</li>
           </a>
-           <a href="/service">
+           {/* <a href="/service">
             <li>Services</li>
-          </a>
+          </a> */}
           <a href="/booking">
             <li>Booking</li>
           </a> 

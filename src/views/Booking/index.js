@@ -16,12 +16,12 @@ const Booking = () => {
   const theme = useTheme();
   const bgColor = theme.colors.brand[800];
   const data = [
-    { name: "Dinner at Eiffel Tower's Madame Brasserie", comments: 'Great service!', rating: 5 },
-    { name: 'Eiffel Tower Guided Tour: Summit or Second Floor', comments: 'Awesome experience!', rating: 4 },
-    { name: 'Dining Option at Eiffel Tower', comments: 'Awesome experience!', rating: 1 },
-    { name: 'Jane Smith', comments: 'Awesome experience!', rating: 4 },
-    { name: 'Eiffel Tower Guided Tour: Summit or Second Floor', comments: 'Awesome experience!', rating: 3 },
-    { name: 'Dining Option at Eiffel Tower', comments: 'Awesome experience!', rating: 2 },
+    { name: "Hyder`s", address: 'Sindhi Muslim Society', rating: 3 },
+    { name: 'Food Break', address: 'charminar , Bahadurabad', rating: 4 },
+    { name: 'Koffie Chalet', address: 'Sindhi Muslim Society', rating: 3 },
+    { name: 'Buland Roll Point', address: 'City Koat', rating: 4 },
+    { name: 'Street Pizza', address: 'Soldier Bazar', rating: 3 },
+    { name: 'Cafe Bogie', address: 'I.I Chundigar Road', rating: 2 },
   ];
   return (
     <>
@@ -32,13 +32,12 @@ const Booking = () => {
         description="Explore the Restaurants & Dining Options With Serve_Pro"
         imageUrl={B6}
       />
-      <HorizontalTab position={"absolute"} 
+      {/* <HorizontalTab position={"absolute"} 
         leftContent={<Text fontWeight={"bold"} fontSize={20}>For More Information Or To Contact Us, Call Us Or Complete The Form Below</Text>}
         rightContent={<Button w={60} p={6} bg={"black"} colorScheme='white'>
         <Text mr={2} fontStyle={"italic"}>Contact US</Text><FaLongArrowAltRight /></Button>}
-      />
+      /> */}
       </div>
-      {/* <Heading>OUR AVAILABLE LOCATIONS.....</Heading> */}
 
       <Flex
       direction={"column"}
@@ -86,6 +85,7 @@ const Booking = () => {
     </Box>
     <Flex p={8} gap={"10px"} direction={"column"} maxWidth={"600px"}>
         <Heading fontSize={"24px"}>{item ? item?.name :"Dinner at Eiffel Tower's Madame Brasserie"}</Heading>
+        <Text fontSize={"18px"}>{item? item?.address: ""}</Text>
         <Tabs>
             <TabList>
                 <Tab>Highlights</Tab>
@@ -133,14 +133,12 @@ const Booking = () => {
         borderWidth="1px"
         borderColor={"gray.400"}
         borderRadius={"10px"}>
-        <Text>from</Text>
-        <Heading>Rs:{"500"}</Heading>
         <Button w={60} p={6} bg={"black"} colorScheme='white' _hover={bgColor}>
         <Text mr={2} fontStyle={"italic"}>Check Availability</Text><FaLongArrowAltRight /></Button>
-        <Text fontSize={"12px"}>Next available {"Jan 2nd"}</Text>
-        <Flex alignItems={"center"}><FaLongArrowAltRight /><Text ml={2}>Free Cancellation</Text></Flex>
+        <Text fontSize={"12px"}>Charges applied after 15 Minutes</Text>
+        <Flex alignItems={"center"}><FaLongArrowAltRight /><Text ml={2}>Free Cancellation On First 3 Orders</Text></Flex>
         <Flex alignItems={"center"}><FaLongArrowAltRight /><Text ml={2}>Instant Confirmation</Text></Flex>
-        <Flex alignItems={"center"}><FaLongArrowAltRight /><Text ml={2}>Max Time: 1 hr. 30 min.</Text></Flex>
+        <Flex alignItems={"center"}><FaLongArrowAltRight /><Text ml={2}>Max Time: 1 hr</Text></Flex>
         <Flex mt={2}  alignItems={"center"}>
         <Text mr={2}>Reviews:</Text>
         {Array.from({ length: item?.rating }).map((_, i) => (
