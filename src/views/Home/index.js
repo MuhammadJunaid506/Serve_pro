@@ -33,10 +33,10 @@ const Home = () => {
         imageUrl={Banner}
         showButtons="multiple"
       />
-      <HorizontalTab position={"absolute"}
+      {/* <HorizontalTab position={"absolute"}
         leftContent={<Text fontWeight={"bold"} fontSize={20}>Find Out Why We're A Top-Rated <br/> Smog Check & Registration Shop</Text>}
         rightContent={<Text fontSize={20}>SE HABLA ESPAÑOL<br/><span style={{fontWeight:"bold" , fontSize:"32"}}>(909) 499-9590</span></Text>}
-      />
+      /> */}
       </div>
       <Flex
       direction={{ base: 'column', md: "row" }}

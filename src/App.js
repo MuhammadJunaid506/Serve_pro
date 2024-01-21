@@ -21,6 +21,7 @@ function App() {
         <Route path="/location" element={<Locations />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/:id" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/received-message" element={<ReceivedMessage />} />
         <Route path="/dashboard" element={""} />

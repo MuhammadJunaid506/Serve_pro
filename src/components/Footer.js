@@ -50,7 +50,7 @@ const Footer = () => {
           <Box p={1} borderRadius={50} bg={"white"}><SiGooglemybusiness color='black'/></Box>
           <Box p={1} borderRadius={50} bg={"white"}><MdOutlineEmail color='black' /></Box>
         </Stack>
-        <Text fontSize="lg" fontWeight="bold" fontStyle={"italic"}>© 2021 All Rights Reserved | SERVE_PRO</Text>
+        <Text fontSize="lg" fontWeight="bold" fontStyle={"italic"}>© 2024 All Rights Reserved | SERVE_PRO</Text>
         <Text>Privacy Policy</Text>
         </Flex>
         </Box>
